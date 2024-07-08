@@ -128,23 +128,29 @@ html > body * {
 
 .con-min-width {
     min-width: 1440px;
-    border: 1px solid lightblue;
+    /* border: 1px solid lightblue; */
 }
 .con {
     width: 1440px; 
     margin: 0 auto;
-    outline: 1px solid orange;
+    /* outline: 1px solid orange; */
 }
 
 /* 커스텀 */
 /* body {
     width: 1920px;
 } */
-/* header 시작 */
-/* #top_bar {
-    
-} */
 
+/* header 시작 */
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
 .menu_wrap {
     background-color: #000; /* 메뉴바 배경색 */
 }
@@ -163,6 +169,12 @@ html > body * {
 /* header 끝 */
 
 /* main 시작 */
+main {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+}
 main > .section {
     height: 810px;
 }
@@ -177,21 +189,21 @@ main > .section > .con > .img_txt_wrap {
 /* 메인 안의 모든 섹션 안의 요소들 수직 가운데 정렬 끝 */
 
 /* main > .section_1 시작 */
-main > .section_1 {
-    height: 1000px;
-}
+/* main > .section_1 {
+    height: 900px;
+} */
 
 /* 임시 */
 main > .section_1 img {
     opacity: 0.3;
 }
-/* main > .section_1 끝 */
 
 
 /* 모든 section_l 안의 .txt_box */
 main > .section_l > .con > .img_txt_wrap > .txt_box_l {
     margin-left: 40px;
 }
+/* main > .section_1 끝 */
 
 /* 모든 section_r 안의 .txt_box */
 main > .section_r > .con > .img_txt_wrap > .txt_box {
@@ -202,18 +214,43 @@ main > .section_r > .con > .img_txt_wrap > .img_box {
 }
 
 /* main > .section_2 시작 */
+main > .section_2 {
+    /* padding: 80px 0; */
+    margin: 100px 0;
+    
+}
 main > .section_2 > .con > .flex_box {
-    width: 65%;
-    height: 80%;
+    width: 100%;
+}
+main > .section_2 > .con > .flex_box:last-child {
+	padding-top: 10px; /* section_2 .it_box 상하 사이 간격 */
 }
 
 main > .section_2 > .con .it_box {
-    width: 50%; height: 50%;
+    width: 40%; 
+	height: 350px;
+    border-radius: 10px;
     border: 1px solid blue;
+}
+main > .section_2 > .con .it_box:last-child {
+	margin-left: 10px; /* section_2 .it_box 좌우 사이 간격 */
+	background-color: #ffa;
 }
 /*main > .section_2 끝 */
 
+main > .section_2-2 {
+    height: 50px;
+}
+
 /* main > .section_3 시작 */
+main > .section_3 {
+    /* height: 900px; */
+    height: 810px;
+    margin-bottom: 120px;
+}
+main > .section_3 > .con {
+    height: 810px;
+}
 main > .section_3 > .con > .video_wrap {
     width: 100%;
     height: 100%;
@@ -221,14 +258,14 @@ main > .section_3 > .con > .video_wrap {
 }
 main > .section_3 > .con > .video_wrap > iframe {
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
 /* main > .section_3 끝 */
 
 /* main > .section_4 시작 */
 main > .section_4 > .con > .absolute { /* AI가... (이하생략) h1 */
     left: 10px;
-    top: 50px;
+    top: 10px;
 }
 
 main > .section > .con > .img_txt_wrap > .txt_box > .txt {
@@ -236,6 +273,13 @@ main > .section > .con > .img_txt_wrap > .txt_box > .txt {
 	/* 메인 안의 모든 섹션 안의 텍스트 박스*/
 }
 /* main > .section_4 끝 */
+
+/* main > .section_4~7 높이 설정 시작 */
+main > .st_h_1 {
+    height: 780px;
+}
+/* main > .section_4~7 높이 설정 끝 */
+
 
 /* main > .section_8 시작 */
 main > .section_8 > .con {
