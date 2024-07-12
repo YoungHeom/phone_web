@@ -212,11 +212,7 @@ header {
 
 /* main 시작 */
 main {
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 80px;
-    transform: translateX(-50%);
+    margin-top: 80px;
 }
 main > .section {
     height: 810px;
