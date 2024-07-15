@@ -23,10 +23,25 @@ html > body * {
 
 /* 라이브러리 */
 .bd {
-    border: 1px solid #000;
+    border: 1px solid #aaa;
+}
+.bd-dt {
+    border: 1px dotted #aaa;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
 }
 .block {
     display: block;
+}
+.mx-auto {
+    margin: 0 auto;
+}
+.pt-10 {
+    padding-top: 10px;
 }
 .flex {
     display: flex;
@@ -112,12 +127,33 @@ html > body * {
 .text-52 {
     font-size: 52px;
 }
-.text-24 {
-    font-size: 1.5rem; /* 24px */
+.text-48 {
+    font-size: 48px;
 }
-
+.text-44 {
+    font-size: 44px;
+}
+.text-24 {
+    font-size: 24px; /* 1.5rem */
+}
+.text-18 {
+	font-size: 18px;
+}
+.text-16 {
+	font-size: 16px;
+}
+.text-14 {
+	font-size: 14px;
+}
+.text-12 {
+	font-size: 12px;
+}
 .text-white {
     color: white;
+}
+
+.bg-black {
+	background-color: black;
 }
 
 .con-min-width {
@@ -126,7 +162,7 @@ html > body * {
 }
 .con {
     width: 1440px; 
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* outline: 1px solid green; */
 }
 
@@ -141,9 +177,7 @@ header {
     transform: translateX(-50%);
     z-index: 1000;
 }
-.menu_wrap {
-    background-color: #000; /* 메뉴바 배경색 */
-}
+
 /* header > .menu_box_1 시작 */
 .menu_box_1 {
     height: 80px;
@@ -175,7 +209,6 @@ header {
 .con-min-width > .con .search_wrap > .search_box > .input {
 	width: 100%;
     background-color: transparent;
-    color: white;
 	border: none;
 	font-size: 20px;
 	padding: 0;
@@ -270,7 +303,8 @@ main > .section_2 > .con .it_box {
 	height: 350px;
     border-radius: 10px;
     /* border: 1px solid blue; */
-    background-color: cornsilk;
+    background-color: black;
+    overflow: hidden;
 }
 main > .section_2 > .con .it_box:last-child {
 	margin-left: 10px; /* section_2 .it_box 좌우 사이 간격 */
@@ -336,21 +370,33 @@ main > .section_8 > .con > .info_wrap > h2 {
 }
 
 main > .section_8 > .con > .info_wrap > .info_box > .s24_i {
-    width: 315px; height: 560px;
-    outline: 1px solid #e6a;
+    width: 315px; height: 520px;
+    /* outline: 1px solid #e6a; */
 }
 main > .section_8 > .con > .info_wrap > .info_box > .s24_i h3 {
     font-size: 38px;
     font-weight: 700;
 }
-i::before {
-    font-size: 32px;
+main > .section_8 > .con > .info_wrap > .info_box > .s24_i i::before {
+    font-size: 31px;
     display: block;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    text-shadow: 1px 0 black;
 }
-main > .section_8 > .con > .info_wrap .s24_i > .pd-t {
-    padding-top: 30px;
+
+main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box.mt-30 {
+    margin-top: 30px;
+    height: 400px;
 }
+main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box .block {
+    margin-top: 14px;
+}
+main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box_l .block {
+    margin-right: 18px;
+}
+/* main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box_r .block {
+    margin-left: 18px;
+} */
 /* main > .section_8 끝 */
 /* main > .section_9 시작 */
 main > .section_9 > .con {
@@ -367,5 +413,43 @@ main > .section_9 > .con > .pd-t {
 /* main 끝 */
 
 /* footer 시작 */
+nav.con {
+	width: 100%; /*바로 위 섹션에 크기를 맞출까?*/
+    height: 440px;
+	/* border-radius: 40px 40px 0px 0px; */
+/* 	font-size: 14px; */
+}
+footer > section.con-min-width nav > div {
+	width: 1220px;
+/* 	padding-left: 100px; */
+	padding-top: 10px;
+}
+footer > section.con-min-width nav > div:last-child {
+    padding-top: 30px;
+}
 
+footer .con > .ft_menu_1 > ul  h3.mb-18 {
+	font-size: 16px;
+    margin-bottom: 20px;
+    /* h3 메뉴 아래 간격 */
+}
+footer nav.con .ft_menu_1 ul > li {
+    margin-top: 12px; /* 작은 메뉴들 간격 */
+    /* border: 1px solid #fff; */
+}
+
+/* .con > ft_menu.ft_menu_2 시작 */
+footer > .con-min-width .sns_logo_wrap > .logo {
+    width: 30px;
+	height: 30px;
+    /* 	border: 1px dashed #000; */
+}
+
+.txt_box div > span {
+    padding-left: 10px;
+}
+.sns_logo_wrap .fa-brands.fa-square-facebook::before {
+    padding-right: 3px;
+}
+/* .con > ft_menu.ft_menu_2 끝 */
 /* footer 끝 */

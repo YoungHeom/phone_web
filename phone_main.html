@@ -19,8 +19,8 @@
 <body>
     <div id="main_wrap">
         <header id="top_bar">
-            <div class="con-min-width menu_wrap">
-                <ul class="con menu_box_1 flex text-white">
+            <div class="con-min-width menu_wrap bg-black">
+                <ul class="con menu_box_1 mx-auto flex text-white">
                     <a href="#" class="logo_wrap">
                         <h1 class="logo flex flex-jc-c flex-ai-c block">Logo</h1>
                     </a>
@@ -28,7 +28,7 @@
                     <li class="flex-grow-1 flex flex-jc-e flex-ai-c">
                         <div class="search_wrap flex flex-jc-e flex-ai-c">
                             <div class="search_box flex flex-ai-c">
-                                <input class="input" type="text" placeholder="검색어를 입력해주세요"></input>
+                                <input class="input text-white" type="text" placeholder="검색어를 입력해주세요"></input>
                             </div>
                             <div class="icon_box">
                                 <i class="fa-solid fa-magnifying-glass search_icon"></i>
@@ -51,19 +51,18 @@
         </header>
         <main id="main" class="main_ct">
             <section class="con-min-width section section_1">
-                <div class="con img_box">
+                <div class="con img_box mx-auto">
                     <img src="https://picsum.photos/id/435/1440/810" alt="s24_series" style="display: block;">
                 </div>
             </section>
             <section class="con-min-width flex flex-ai-c section section_2 point_info">
-                <div class="con flex flex-col flex-jc-c flex-ai-c">
+                <div class="con mx-auto flex flex-col flex-jc-c flex-ai-c">
                     <div class="flex_box flex flex-jc-c flex-ai-c flex-wrap">
                         <div class="it_box flex_it">
-                            <span class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Aspernatur non maxime molestias doloribus aliquid, accusamus temporibus voluptatum
-                                voluptate.
-                                Officiis facere quas animi expedita commodi molestias mollitia praesentium neque
-                                eligendi deleniti.</span>
+                            <span class="block">
+                                <div class="text-white text-44">Lorem ipsum</div>
+                                <img src="https://images.samsung.com/kdp/cms_contents/346254/a003dd6a-4c18-42a9-b625-529ad55a145c.jpg?$FB_TYPE_A_JPG$" alt="">
+                            </span>
                             <span class="block"></span>
                         </div>
                         <div class="it_box flex_it"></div>
@@ -75,7 +74,7 @@
                 </div>
             </section>
             <section class="con-min-width section section_3 flex flex-ai-c">
-                <div class="con">
+                <div class="con mx-auto">
                     <div class="video_wrap">
                         <iframe src="https://www.youtube.com/embed/Ba0GM5FXsic?si=9Qkab9JqOgFw8nKE"
                             title="YouTube video player" frameborder="0"
@@ -87,7 +86,7 @@
 
             <!-- 기능 설명 시작 -->
             <section class="con-min-width section section_4 section_l st_h_1">
-                <div class="con flex flex-ai-c relative">
+                <div class="con mx-auto flex flex-ai-c relative">
                     <h2 class="absolute font-800 text-52">AI가 선사하는 새로운 경험</h2>
                     <div class="img_txt_wrap box_l flex">
                         <div class="img_box">
@@ -107,7 +106,7 @@
                 </div>
             </section>
             <section class="con-min-width section section_5 section_r st_h_1">
-                <div class="con flex flex-jc-e flex-ai-c">
+                <div class="con mx-auto flex flex-jc-e flex-ai-c">
                     <div class="img_txt_wrap box_r flex">
                         <div class="txt_box">
                             <div class="title text-52">Lorem Ipsum</div>
@@ -126,7 +125,7 @@
                 </div>
             </section>
             <section class="con-min-width section section_6 section_l st_h_1">
-                <div class="con flex flex-ai-c relative">
+                <div class="con mx-auto flex flex-ai-c relative">
                     <div class="img_txt_wrap box_l flex">
                         <div class="img_box">
                             <img src="https://picsum.photos/id/435/760/570" alt="">
@@ -145,7 +144,7 @@
                 </div>
             </section>
             <section class="con-min-width section section_7 section_r st_h_1">
-                <div class="con flex flex-jc-e flex-ai-c">
+                <div class="con mx-auto flex flex-jc-e flex-ai-c">
                     <div class="img_txt_wrap box_r flex">
                         <div class="txt_box">
                             <div class="title text-52">Lorem Ipsum</div>
@@ -167,66 +166,105 @@
 
             <!-- s24 series 비교 -->
             <section class="con-min-width section section_8">
-                <div class="con flex flex-jc-c flex-ai-c">
-                    <div class="info_wrap bd">
+                <div class="con mx-auto flex flex-jc-c flex-ai-c">
+                    <div class="info_wrap">
                         <h2>S24 Series</h2>
-                        <div class="flex info_box flex-jc-sa bd"><!-- flex 잠깐 지움-->
+                        <div class="info_box flex flex-jc-sa bd"><!-- flex 잠깐 지움-->
                             <div class="s24_i s24 flex flex-col flex-ai-c">
-                                <div class="h3_wrap">
+                                <div class="h3_wrap pt-10">
                                     <a class="flex flex-ai-c" href="#">
                                         <h3>S24</h3>
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </a>
                                 </div>
-                                <div class="pd-t flex flex-col flex-jc-c flex flex-ai-c">
-                                    <span class="block">디스플레이 크기</span>
-                                    <span class="block">해상도</span>
-                                    <span class="block">프로세서</span>
-                                    <span class="block">메모리</span>
-                                    <span class="block">저장용량</span>
-                                    <span class="block">카메라</span>
-                                    <span class="block">S펜 지원</span>
-                                    <span class="block">배터리</span>
-                                    <span class="block">무게</span>
+                                <div class="txt_box_wrap flex">
+                                    <div class="txt_box txt_box_l mt-30 flex flex-col flex-jc-c flex-ai-e text-18">
+                                        <span class="block">디스플레이 크기</span>
+                                        <span class="block">해상도</span>
+                                        <span class="block">프로세서</span>
+                                        <span class="block">메모리</span>
+                                        <span class="block">저장용량</span>
+                                        <span class="block">카메라</span>
+                                        <span class="block">S펜 지원</span>
+                                        <span class="block">배터리</span>
+                                        <span class="block">무게</span>
+                                    </div>
+                                    <div class="txt_box txt_box_r mt-30 flex flex-col flex-jc-c flex-ai-s text-18">
+                                        <span class="block">0*0px</span>
+                                        <span class="block">000</span>
+                                        <span class="block">프로세서</span>
+                                        <span class="block">메모리</span>
+                                        <span class="block">000GB</span>
+                                        <span class="block">000화소</span>
+                                        <span class="block">-</span>
+                                        <span class="block">000mAh</span>
+                                        <span class="block">000g</span>
+                                    </div>
                                 </div>
 
                             </div>
                             <div class="s24_i s24_p flex flex-col flex-ai-c">
-                                <div class="h3_wrap">
+                                <div class="h3_wrap pt-10">
                                     <a class="flex flex-ai-c" href="#">
                                         <h3>S24+</h3>
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </a>
                                 </div>
-                                <div class="pd-t flex flex-col flex-jc-c flex flex-ai-c">
-                                    <span class="block">디스플레이 크기</span>
-                                    <span class="block">해상도</span>
-                                    <span class="block">프로세서</span>
-                                    <span class="block">메모리</span>
-                                    <span class="block">저장용량</span>
-                                    <span class="block">카메라</span>
-                                    <span class="block">S펜 지원</span>
-                                    <span class="block">배터리</span>
-                                    <span class="block">무게</span>
+                                <div class="txt_box_wrap flex">
+                                    <div class="txt_box txt_box_l mt-30 flex flex-col flex-jc-c flex-ai-e text-18">
+                                        <span class="block">디스플레이 크기</span>
+                                        <span class="block">해상도</span>
+                                        <span class="block">프로세서</span>
+                                        <span class="block">메모리</span>
+                                        <span class="block">저장용량</span>
+                                        <span class="block">카메라</span>
+                                        <span class="block">S펜 지원</span>
+                                        <span class="block">배터리</span>
+                                        <span class="block">무게</span>
+                                    </div>
+                                    <div class="txt_box txt_box_r mt-30 flex flex-col flex-jc-c flex-ai-s text-18">
+                                        <span class="block">0*0px</span>
+                                        <span class="block">000</span>
+                                        <span class="block">프로세서</span>
+                                        <span class="block">메모리</span>
+                                        <span class="block">000GB</span>
+                                        <span class="block">000화소</span>
+                                        <span class="block">-</span>
+                                        <span class="block">000mAh</span>
+                                        <span class="block">000g</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="s24_i s24_u flex flex-col flex-ai-c">
-                                <div class="h3_wrap">
+                                <div class="h3_wrap pt-10">
                                     <a class="flex flex-ai-c" href="#">
                                         <h3>S24 Ultra</h3>
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </a>
                                 </div>
-                                <div class="pd-t flex flex-col flex flex-ai-e">
-                                    <span class="block">디스플레이 크기</span>
-                                    <span class="block">해상도</span>
-                                    <span class="block">프로세서</span>
-                                    <span class="block">메모리</span>
-                                    <span class="block">저장용량</span>
-                                    <span class="block">카메라</span>
-                                    <span class="block">S펜 지원</span>
-                                    <span class="block">배터리</span>
-                                    <span class="block">무게</span>
+                                <div class="txt_box_wrap flex">
+                                    <div class="txt_box txt_box_l mt-30 flex flex-col flex-jc-c flex-ai-e text-18">
+                                        <span class="block">디스플레이 크기</span>
+                                        <span class="block">해상도</span>
+                                        <span class="block">프로세서</span>
+                                        <span class="block">메모리</span>
+                                        <span class="block">저장용량</span>
+                                        <span class="block">카메라</span>
+                                        <span class="block">S펜 지원</span>
+                                        <span class="block">배터리</span>
+                                        <span class="block">무게</span>
+                                    </div>
+                                    <div class="txt_box txt_box_r mt-30 flex flex-col flex-jc-c flex-ai-s text-18">
+                                        <span class="block">0*0px</span>
+                                        <span class="block">000</span>
+                                        <span class="block">프로세서</span>
+                                        <span class="block">메모리</span>
+                                        <span class="block">000GB</span>
+                                        <span class="block">000화소</span>
+                                        <span class="block">O</span>
+                                        <span class="block">000mAh</span>
+                                        <span class="block">000g</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +272,7 @@
                 </div>
             </section>
             <section class="con-min-width section section_9">
-                <div class="con flex flex-col flex-jc-c relative">
+                <div class="con mx-auto flex flex-col flex-jc-c relative">
                     <h2 class="absolute text-52">User review</h2>
                     <div class="pd-t flex flex-jc-se bd">
                         <div class="review_box review_box_1">
@@ -286,29 +324,82 @@
         </main>
         <footer>
             <section class="con-min-width bt_bar">
-                <div class="con">
-                    <nav class="ft_menu menu_1">
-                        <li class="menu menu_1">제품</li>
-                        <li class="menu menu_2">고객서비스</li>
-                        <li class="menu menu_3">이벤트</li>
-                        <li class="menu menu_4">회사소개</li>
-                        <li class="menu menu_5">비즈니스</li>
-                    </nav>
-                    <div ft_menu menu_2>
-                        <div class="sns_logo">
-                            <a class="logo logo-1"></a>
-                            <a class="logo logo-2"></a>
-                            <a class="logo logo-3"></a>
+                <nav class="con mx-auto flex flex-col flex-jc-c flex-ai-c text-14 text-white bg-black">
+                    <div class="ft_menu ft_menu_1 flex flex-jc-sb">
+                        <ul class="item item_1 ta-c">
+                            <h3 class="mb-18">제품</h3>
+                            <li><a href="#">스마트폰</a></li>
+                            <li><a href="#">태블릿</a></li>
+                            <li><a href="#">워치</a></li>
+                            <li><a href="#">노트북</a></li>
+                            <li><a href="#">모니터</a></li>
+                            <li><a href="#">프린터</a></li>
+                            <li><a href="#">음향기기</a></li>
+                            <li><a href="#">액세서리</a></li>
+                        </ul>
+                        <ul class="item item_2">
+                            <h3 class="mb-18">고객서비스</h3>
+                            <li><a href="#">매뉴얼 & 다운로드</a></li>
+                            <li><a href="#">매장 찾기</a></li>
+                            <li><a href="#">서비스센터 찾기</a></li>
+                            <li><a href="#">멤버십</a></li>
+                            <li><a href="#">고객문의</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                        <ul class="item item_3">
+                            <h3 class="mb-18">이벤트</h3>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                        <ul class="ft_menu item_4">
+                            <h3 class="mb-18">회사소개</h3>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                        <ul class="ft_menu item_5">
+                            <h3 class="mb-18">비즈니스</h3>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft_menu ft_menu_2 menu_2 flex">
+                        <div class="sns_logo_wrap flex flex-jc-c flex-ai-c text-24">
+                            <a href="#" class="logo logo-1 flex flex-jc-s flex-ai-c">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="logo logo-2 flex flex-jc-s flex-ai-c">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                            <a href="#" class="logo logo-3 flex flex-jc-s flex-ai-c">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
                         </div>
-                        <div>
-                            <div class="txt_box">
-                                <span class="block"></span>
-                            <span class="block"></span>
-                            <span class="block"></span>
+                        <div class="flex-grow-1"></div>
+                        <div class="txt_box_wrap">
+                            <div class="txt_box text-12">
+                                <div class="flex flex-jc-e">
+                                    <span class="block"><a href="#">개인정보처리방침</a></span>
+                                    <span class="block"><a href="#">사이트맵</a></span>
+                                    <span class="block"><a href="#">이용약관</a></span>
+                                </div>
+                                <span>Copyright © 1995-2024 Samsing. All Rights Reserved.</span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </nav>
             </section>
         </footer>
     </div>
