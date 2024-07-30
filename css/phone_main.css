@@ -158,7 +158,7 @@ html > body * {
 
 .con-min-width {
     min-width: 1440px;
-    border: 3px solid skyblue;
+    /* border: 3px solid skyblue; */
 }
 .con {
     width: 1440px; 
@@ -320,7 +320,7 @@ main > .section_2-2 {
 main > .section_3 {
     /* height: 900px; */
     height: 810px;
-    margin-bottom: 120px;
+    /* margin-bottom: 200px; */
 }
 main > .section_3 > .con {
     height: 810px;
@@ -336,6 +336,15 @@ main > .section_3 > .con > .video_wrap > iframe {
 }
 /* main > .section_3 끝 */
 
+/* main > .section_4~7 높이 설정 시작 */
+main > .h-100 {
+    height: 300px;
+}
+main > .h-760 {
+    height: 760px;
+}
+/* main > .section_4~7 높이 설정 끝 */
+
 /* main > .section_4 시작 */
 main > .section_4 > .con > .absolute { /* AI가... (이하생략) h1 */
     left: 10px;
@@ -347,13 +356,6 @@ main > .section > .con > .img_txt_wrap > .txt_box > .txt {
 	/* 메인 안의 모든 섹션 안의 텍스트 박스*/
 }
 /* main > .section_4 끝 */
-
-/* main > .section_4~7 높이 설정 시작 */
-main > .st_h_1 {
-    height: 780px;
-}
-/* main > .section_4~7 높이 설정 끝 */
-
 
 /* main > .section_8 시작 */
 main > .section_8 > .con {
