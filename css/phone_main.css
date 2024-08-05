@@ -121,17 +121,14 @@ html > body * {
 .font-w-900 {
     font-weight: 900;
 }
-.text-56 {
-    font-size: 56px;
-}
-.text-52 {
-    font-size: 52px;
-}
 .text-48 {
     font-size: 48px;
 }
 .text-44 {
     font-size: 44px;
+}
+.text-36 {
+    font-size: 24px; /* 1.5rem */
 }
 .text-24 {
     font-size: 24px; /* 1.5rem */
@@ -167,7 +164,7 @@ html > body * {
 
 .con-min-width {
     min-width: 1440px;
-    border: 3px solid skyblue;
+    outline: 3px solid skyblue;
 }
 .con {
     width: 1440px; 
@@ -202,8 +199,8 @@ header {
     color: #777;
 }
 .con-min-width > .con .search_wrap {
-    width: 400px;
-	height: 50px;
+    width: 300px;
+	height: 40px;
     padding-left: 10px;
     padding-right: 10px;
 	outline: 1px solid #fff;
@@ -219,7 +216,7 @@ header {
 	width: 100%;
     background-color: transparent;
 	border: none;
-	font-size: 20px;
+	font-size: 16px;
 	padding: 0;
 	padding-right: 10px;
 }
@@ -236,19 +233,17 @@ header {
 }
 .con-min-width > .con .search_wrap > .icon_box i::before {
 	display: block;
-	font-size: 30px;
+	font-size: 24px;
 	color: white;
 	cursor: pointer;
 }
 
-/* 검색창 */
+/* 검색창 끝 */
 
 .cart_login > .cart, .cart_login > .login {
 	width: 80px;
 }
-.cart_login > .login {
-    padding-right: 10px;
-}
+
 /* header > .menu_box_1 끝 */
 /* header 끝 */
 
@@ -256,9 +251,9 @@ header {
 main {
     margin-top: 80px;
 }
-main > .section {
+/* main > .section {
     height: 810px;
-}
+} */
 main > .section > .con {
     height: 100%;
 }
@@ -272,20 +267,22 @@ main > .section > .con > .img_txt_wrap {
 /* 메인 안의 모든 섹션 안의 요소들 수직 가운데 정렬 끝 */
 
 /* main > .section_1 시작 */
-/* main > .section_1 {
-    height: 900px;
-} */
+main > .section_1 {
+    /* max-height: 100vh; */
+    height: 100%;
+}
+main > .section_1 > .con {
+    width: 100%;
+}
+main > .section_1 > .section_1__img_wrap {
 
-/* 임시 */
-main > .section_1 img {
-    opacity: 0.3;
+    background-color: skyblue;
+}
+main > .section_1 > .section_1__img_wrap > img {
+    height: 100%;
+    width: 100%;
 }
 
-
-/* 모든 section_l 안의 .txt_box */
-main > .section_l > .con > .img_txt_wrap > .txt_box_l {
-    margin-left: 40px;
-}
 /* main > .section_1 끝 */
 
 /* 모든 section_r 안의 .txt_box */
@@ -305,6 +302,38 @@ main > .section_2 {
 main > .section_2 > .con > .flex_box {
     width: 100%;
 }
+main > .section_2 {}
+
+/* 슬라이더 시작 */
+swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.swiper-wrapper {
+    align-items: center;
+}
+/* slider 끝 */
+
+
+
+
+
 main > .section_2 > .con > .flex_box:last-child {
 	padding-top: 10px; /* section_2 .it_box 상하 사이 간격 */
 }
@@ -351,8 +380,13 @@ main > .section_3 > .con > .video_wrap > iframe {
 /* main > .section_3 끝 */
 
 /* main > .section_4 시작 */
+/* 모든 section_l(left) 안의 .txt_box */
+main > .section_l > .con > .img_txt_wrap > .txt_box_l {
+    margin-left: 40px;
+}
+
 main > .section_4 > .con > .absolute { /* AI가... (이하생략) h1 */
-    left: 10px;
+    left: 0px;
     top: 10px;
 }
 
@@ -370,6 +404,10 @@ main > .st_h_1 {
 
 
 /* main > .section_8 시작 */
+main > .section_8, main > .section_9 {
+    height: 810px;
+}
+
 main > .section_8 > .con {
     height: 100%;
 }
@@ -413,7 +451,7 @@ main > .section_9 > .con {
     height: 100%;
 }
 main > .section_9 > .con > .absolute {
-    left: 10px;
+    /* left: 10px; */
     top: 100px;
 }
 main > .section_9 > .con > .m-t {
@@ -424,10 +462,10 @@ main > .section_9 > .con > .m-t {
 
 /* footer 시작 */
 nav.con {
-    height: 440px;
+    height: 380px;
 	/* border-radius: 40px 40px 0px 0px; */
     /* 	font-size: 14px; */
-    color: #e0e0e0;
+    color: #d6d6d6;
 }
 footer > section.con-min-width nav > div {
 	width: 100%;
@@ -438,7 +476,7 @@ footer > section.con-min-width nav > div:last-child {
     padding-top: 30px;
 }
 
-footer .con > .ft_menu_1 > ul  h3.mb-18 {
+footer .con > .ft_menu_1 > ul h3.mb-18 {
 	font-size: 16px;
     margin-bottom: 20px;
     /* h3 메뉴 아래 간격 */
@@ -459,8 +497,8 @@ footer > .con-min-width .sns_logo_wrap > .logo {
 .sns_logo_wrap .fa-brands.fa-square-facebook::before {
     padding-right: 3px;
 }
-footer > {
-    
+footer > nav > .nav__ft_menu .txt_box_wrap .txt_box span {
+    border: 1px solid #000;
 }
 /* .con > ft_menu.ft_menu_2 끝 */
 /* footer 끝 */
