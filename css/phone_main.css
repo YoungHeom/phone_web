@@ -136,6 +136,9 @@ html > body * {
 .text-24 {
     font-size: 24px; /* 1.5rem */
 }
+.text-20 {
+    font-size: 20px;
+}
 .text-18 {
 	font-size: 18px;
 }
@@ -145,8 +148,14 @@ html > body * {
 .text-14 {
 	font-size: 14px;
 }
+.text-13 {
+	font-size: 13px;
+}
 .text-12 {
 	font-size: 12px;
+}
+.text-11 {
+    font-size: 11px;
 }
 .text-white {
     color: white;
@@ -158,7 +167,7 @@ html > body * {
 
 .con-min-width {
     min-width: 1440px;
-    /* border: 3px solid skyblue; */
+    border: 3px solid skyblue;
 }
 .con {
     width: 1440px; 
@@ -206,7 +215,7 @@ header {
 	height: 100%;
 }
 
-.con-min-width > .con .search_wrap > .search_box > .input {
+.con-min-width > .con .search_wrap > .search_box > .search_box__input {
 	width: 100%;
     background-color: transparent;
 	border: none;
@@ -215,7 +224,7 @@ header {
 	padding-right: 10px;
 }
 
-.con-min-width > .con .search_wrap > .search_box > .input:focus {
+.con-min-width > .con .search_wrap > .search_box > .search_box__input:focus {
 	outline: none;
 }
 
@@ -253,7 +262,9 @@ main > .section {
 main > .section > .con {
     height: 100%;
 }
-
+main > .section h2 {
+    font-size: 36px;
+}
 /* 메인 안의 모든 섹션 안의 요소들 수직 가운데 정렬 시작 */
 main > .section > .con > .img_txt_wrap {
     align-items: center; 
@@ -306,6 +317,9 @@ main > .section_2 > .con .it_box {
     background-color: black;
     overflow: hidden;
 }
+main > .section_2 > .con .it_box img {
+    width: 100%;
+}
 main > .section_2 > .con .it_box:last-child {
 	margin-left: 10px; /* section_2 .it_box 좌우 사이 간격 */
 	background-color: #ffa;
@@ -320,7 +334,7 @@ main > .section_2-2 {
 main > .section_3 {
     /* height: 900px; */
     height: 810px;
-    /* margin-bottom: 200px; */
+    margin-bottom: 120px;
 }
 main > .section_3 > .con {
     height: 810px;
@@ -336,15 +350,6 @@ main > .section_3 > .con > .video_wrap > iframe {
 }
 /* main > .section_3 끝 */
 
-/* main > .section_4~7 높이 설정 시작 */
-main > .h-100 {
-    height: 300px;
-}
-main > .h-760 {
-    height: 760px;
-}
-/* main > .section_4~7 높이 설정 끝 */
-
 /* main > .section_4 시작 */
 main > .section_4 > .con > .absolute { /* AI가... (이하생략) h1 */
     left: 10px;
@@ -357,48 +362,51 @@ main > .section > .con > .img_txt_wrap > .txt_box > .txt {
 }
 /* main > .section_4 끝 */
 
+/* main > .section_4~7 높이 설정 시작 */
+main > .st_h_1 {
+    height: 780px;
+}
+/* main > .section_4~7 높이 설정 끝 */
+
+
 /* main > .section_8 시작 */
 main > .section_8 > .con {
     height: 100%;
 }
 main > .section_8 > .con > .info_wrap {
-    width: 1280px;
+    /* width: 1280px; */
+    width: 100%;
 }
 main > .section_8 > .con > .info_wrap > h2 {
-    padding-left: 54px;
     padding-bottom: 40px;
-    font-size: 52px;
+    font-size: 36px;
     font-weight: 700;
 }
 
 main > .section_8 > .con > .info_wrap > .info_box > .s24_i {
-    width: 315px; height: 520px;
-    /* outline: 1px solid #e6a; */
+    /* width: 315px;  */
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 22px 100px;
+}
+main > .section_8 > .con > .info_wrap > .info_box > .s24_i .h3_wrap {
+    padding-bottom: 10px;
 }
 main > .section_8 > .con > .info_wrap > .info_box > .s24_i h3 {
-    font-size: 38px;
+    font-size: 24px;
     font-weight: 700;
 }
 main > .section_8 > .con > .info_wrap > .info_box > .s24_i i::before {
-    font-size: 31px;
+    font-size: 20px;
     display: block;
     padding-top: 1px;
     text-shadow: 1px 0 black;
 }
-
-main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box.mt-30 {
-    margin-top: 30px;
-    height: 400px;
-}
-main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box .block {
+main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box .txt_box__txt {
     margin-top: 14px;
+    text-align: center;
 }
-main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box_l .block {
-    margin-right: 18px;
-}
-/* main > .section_8 > .con > .info_wrap > .info_box .s24_i div.txt_box_r .block {
-    margin-left: 18px;
-} */
+
 /* main > .section_8 끝 */
 /* main > .section_9 시작 */
 main > .section_9 > .con {
@@ -408,21 +416,21 @@ main > .section_9 > .con > .absolute {
     left: 10px;
     top: 100px;
 }
-main > .section_9 > .con > .pd-t {
-    padding-top: 50px;
+main > .section_9 > .con > .m-t {
+    margin-top: 50px;
 }
 /* main > .section_9 끝 */
 /* main 끝 */
 
 /* footer 시작 */
 nav.con {
-	width: 100%; /*바로 위 섹션에 크기를 맞출까?*/
     height: 440px;
 	/* border-radius: 40px 40px 0px 0px; */
-/* 	font-size: 14px; */
+    /* 	font-size: 14px; */
+    color: #e0e0e0;
 }
 footer > section.con-min-width nav > div {
-	width: 1220px;
+	width: 100%;
 /* 	padding-left: 100px; */
 	padding-top: 10px;
 }
@@ -447,11 +455,12 @@ footer > .con-min-width .sns_logo_wrap > .logo {
     /* 	border: 1px dashed #000; */
 }
 
-.txt_box div > span {
-    padding-left: 10px;
-}
+
 .sns_logo_wrap .fa-brands.fa-square-facebook::before {
     padding-right: 3px;
+}
+footer > {
+    
 }
 /* .con > ft_menu.ft_menu_2 끝 */
 /* footer 끝 */
