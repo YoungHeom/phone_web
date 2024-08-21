@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S24 series</title>
+    <!-- 제이쿼리 --><!-- 스크립트보다 아래에 있을 것! -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!------ 폰트어썸 ------>
+    <script src="https://kit.fontawesome.com/c56732103f.js" crossorigin="anonymous"></script>
+    <!------ 전체 폰트 ↓ ------>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="main_wrap">
+        <header id="top_bar">
+            <div class="con-min-width menu_wrap bg-black">
+                <ul class="con menu_box_1 mx-auto flex text-white">
+                    <a href="#" class="logo_wrap">
+                        <h1 class="logo flex flex-ai-c block">
+                            <a href="index.html" class="block"><img src="img/samsung_logo.svg" class="block" style="width: 160px; height: 80px;" alt=""></a>
+                        </h1>
+                    </a>
+                    <!-- 검색창 시작  -->
+                    <li class="flex-grow-1 flex flex-jc-e flex-ai-c">
+                        <div class="search_wrap flex flex-jc-e flex-ai-c">
+                            <div class="search_box flex flex-ai-c">
+                                <input class="search_box__input input text-white" type="text"
+                                    placeholder="검색어를 입력해주세요"></input>
+                            </div>
+                            <div class="icon_box">
+                                <i class="fa-solid fa-magnifying-glass search_icon"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 검색창 끝  -->
+                    <li class="flex flex-ai-c">
+                        <div>
+                            <div class="flex-grow-1"></div>
+                            <div class="flex"></div>
+                        </div>
+                    </li>
+                    <li class="cart_login flex flex-ai-c">
+                        <div class="cart flex flex-jc-e"><a href="#">장바구니</a></div>
+                        <div class="login flex flex-jc-e"><a href="#">로그인</a></div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main id="main" class="main_ct">
+            <section class="sticky">
+
+            </section>
+            <section class="con-min-width section section_1">
+                <div class="con section_1__img_wrap mx-auto">
+                    <img src="img/phone_using-1.gif" alt="s24_series" class="block mx-auto">
+                    <!-- <video src="video/phone_using-1.mp4" class="block" type="video/mp4" controls autoplay></video> -->
+                    <!-- <img src="https://picsum.photos/id/435/1440/810" alt="s24_series" style="display: block;"> -->
+                </div>
+            </section>
+            <section class="con-min-width flex flex-ai-c section section_2 point_info">
+                <div class="con mx-auto flex flex-col flex-jc-c flex-ai-c">
+                    <!-- 스와이퍼 시작 -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://images.samsung.com/kdp/cms_contents/346245/9d15e9ce-5987-4964-b05b-87b13458bab3.jpg?$ORIGIN_JPG$"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://images.samsung.com/kdp/cms_contents/346252/bc60f351-dc9d-4e87-9e34-0ae1282c7018.jpg?$ORIGIN_JPG$"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://images.samsung.com/kdp/cms_contents/346254/c3e9de85-a8a8-4691-adae-cee99917e9ab.jpg?$ORIGIN_JPG$"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- 스와이퍼 끝 -->
+
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                    <!-- Swiper 스와이퍼 애니메이션 설정 시작 -->
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            spaceBetween: 30,
+                            centeredSlides: true,
+                            rewind: true,
+                            // autoplay: {
+                            //     delay: 2500,
+                            //     disableOnInteraction: false,
+                            // },
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
+                    <!-- Swiper 스와이퍼 애니메이션 설정 끝 -->
+
+
+
+                    <!-- <div class="flex_box flex flex-jc-c flex-ai-c">
+                        <div class="it_box flex_it">
+                            <span class="block">
+                                <div class="text-white text-36">Lorem ipsum</div>
+                                <img src="https://images.samsung.com/kdp/cms_contents/346254/a003dd6a-4c18-42a9-b625-529ad55a145c.jpg?$FB_TYPE_A_JPG$" alt="">
+                            </span>
+                            <span class="block"></span>
+                        </div>
+                        <div class="it_box flex_it"></div>
+                    </div>
+                    <div class="flex_box flex flex-jc-c flex-ai-c">
+                        <div class="it_box flex_it"></div>
+                        <div class="it_box flex_it"></div>
+                    </div> -->
+                </div>
+            </section>
+            <section class="con-min-width section section_3 flex flex-ai-c">
+                <div class="con mx-auto">
+                    <div class="video_wrap">
+                        <iframe src="https://www.youtube.com/embed/Ba0GM5FXsic?si=9Qkab9JqOgFw8nKE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_100vh flex flex-jc-c flex-ai-c">
+                <h2 class="h2_txt">AI가 선사하는 새로운 경험</h2>
+
+
+                <script>
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() >= 2640) {
+                            $('.h2_txt').addClass('weight');
+                        }
+                    });
+                </script>
+            </section>
+            <!-- 기능 설명 시작 -->
+            <section class="con-min-width section section_4 section_l st_h_1">
+                <div class="con mx-auto flex flex-jc-s flex-ai-c">                    
+                    <div class="img_txt_wrap box_l flex flex-jc-sb">
+                        <div class="img_box">
+                            <img src="https://picsum.photos/id/435/760/570" alt="">
+                        </div>
+                        <div class="txt_box txt_box_l">
+                            <h2 class="h3 title">미네랄에서 영감을 받은 컬러</h2>
+                            <div class="txt" style="color: #363636;">
+                                부드럽고 은은한 광택은 마치 정교하게 만들어진 보석 같은 느낌을 선사하죠. 
+                                <br>
+                                <!-- 이 강력한 티타늄을 손끝으로 느껴 보세요. -->
+                                물질의 본질에서 영감을 받은 컬러 팔레트는  
+                                <br>
+                                세련된 광택과 은은한 빛을 발산하며 마치 천연 보석처럼 섬세하고 고급스러운 감각을 전해줍니다.
+                                <br>
+                                이제, 손끝에서 느껴지는 고유의 아름다움을 경험해보세요.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="con-min-width section section_5 section_r st_h_1">
+                <div class="con mx-auto flex flex-jc-e flex-ai-c">
+                    <div class="img_txt_wrap box_r flex flex-jc-sb">
+                        <div class="txt_box">
+                            <h2 class="title">확대할수록 선명함도 확대</h2>
+                            <div class="txt" style="color: #363636;">
+                                Lorem Ipsum is simply dummy text
+                                <br>
+                                of the printing and typesetting
+                                <br>
+                                industry.
+                            </div>
+                        </div>
+                        <div class="img_box">
+                            <img src="https://picsum.photos/id/435/760/570" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="con-min-width section section_6 section_l">
+                <div class="con mx-auto flex-ai-c">
+                    <div class="txt_box txt_box_l">
+                        <h3 class="title">
+                            AI 줌으로 빛날 어둠 속 인물샷
+                            <br>
+                            나이토그래피
+                        </h3>
+                        <div class="txt" style="color: #363636;">
+                            스페이스 줌으로 어두운 곳에서도
+                            <br>
+                            밝고 다채로운 색감의 선명한 사진 촬영이 가능하죠.
+                            <br>
+                            2배, 3배까지 확대해도 문제 없습니다.
+                            <br>
+                            이제 밤에도 낮처럼 어떤 거리에서도
+                            <br>
+                            선명하게 촬영할 수 있습니다.
+                        </div>
+                    </div>
+                    <div class="img_txt_wrap box_l">
+                        <div class="img_box flex flex-jc-c">
+                            <img src="img/galaxy-s24-highlights-nightography-zoom-2x.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 기능 설명 끝 -->
+
+            <!-- s24 series 비교 -->
+            <section class="con-min-width section section_8">
+                <div class="con mx-auto flex flex-jc-c flex-ai-c">
+                    <div class="info_wrap">
+                        <h2>S24 Series</h2>
+                        <div class="info_box flex flex-jc-sb bd"><!-- flex 잠깐 지움 -->
+                            <div class="s24_info s24 flex flex-col flex-ai-c">
+                                <div class="h3_wrap">
+                                    <a class="flex flex-ai-c" href="https://www.samsung.com/sec/smartphones/galaxy-s24-s921/SM-S921NZYFKOO/" target="_blank">
+                                        <h3>S24</h3>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                                <div class="txt_box_wrap flex">
+                                    <div class="txt_box txt_box_l flex flex-col flex-jc-c flex-ai-c">
+                                        <div class="txt_box__div">
+                                            <span class="txt_box__txt txt_bold block" >디스플레이 크기</span>
+                                            <span class="txt_box__txt block">156.4mm</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt txt_bold block">무게</span>
+                                            <span class="txt_box__txt block">167g</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt txt_bold block">메모리</span>
+                                            <span class="txt_box__txt block">8GB</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt txt_bold block">배터리</span>
+                                            <span class="txt_box__txt block">4000mAh</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt txt_bold block">AP</span>
+                                            <span class="txt_box__txt block">엑시노스 2400</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="s24_info s24_p flex flex-col flex-ai-c">
+                                <div class="h3_wrap">
+                                    <a class="flex flex-ai-c" href="https://www.samsung.com/sec/smartphones/galaxy-s24-plus-s926/SM-S926NZVEKOO/" target="_blank">
+                                        <h3>S24+</h3>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                                <div class="txt_box_wrap flex">
+                                    <div class="txt_box txt_box_l flex flex-col flex-jc-c flex-ai-c">
+                                        <div class="txt_box__div">
+                                            <span class="txt_box__txt txt_bold block" >디스플레이 크기</span>
+                                            <span class="txt_box__txt block">156.4mm</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt txt_bold block">무게</span>
+                                            <span class="txt_box__txt block">167g</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt txt_bold block">메모리</span>
+                                            <span class="txt_box__txt block">8GB</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt txt_bold block">배터리</span>
+                                            <span class="txt_box__txt block">4000mAh</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt txt_bold block">AP</span>
+                                            <span class="txt_box__txt block">엑시노스 2400</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s24_info s24_u flex flex-col flex-ai-c">
+                                <div class="h3_wrap pt-10">
+                                    <a class="flex flex-ai-c" href="#">
+                                        <h3>S24 Ultra</h3>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                                <div class="txt_box_wrap flex">
+                                    <div class="txt_box txt_box_l flex flex-col flex-jc-c flex-ai-c">
+                                        <div class="txt_box__div">
+                                            <span class="txt_box__txt block">디스플레이 크기</span>
+                                            <span class="txt_box__txt block">156.4mm</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt block">무게</span>
+                                            <span class="txt_box__txt block">167g</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt block">메모리</span>
+                                            <span class="txt_box__txt block">8GB</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt block">배터리</span>
+                                            <span class="txt_box__txt block">4000mAh</span>
+                                        </div>
+                                        <div>
+                                            <span class="txt_box__txt block">프로세서</span>
+                                            <span class="txt_box__txt block">0*0px</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="con-min-width section section_9">
+                <div class="con mx-auto flex flex-col flex-jc-c relative">
+                    <h2 class="con__h2 absolute">User review</h2>
+                    <div class="con__div m-t flex flex-jc-sb bd">
+                        <div class="review_box review_box_1">
+                            <div class="img_box img_box_1">
+                                <a href="#">
+                                    <img src="https://picsum.photos/id/445/340/300" alt="">
+                                </a>
+                            </div>
+                            <div class="review_txt">
+                                <div>
+                                    <h3>lorem ipsum</h3>
+                                </div>
+                                <div>Lorem Ipsum is simply
+                                    <br>
+                                    dummy text...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_box review_box_2">
+                            <div class="img_box img_box_1">
+                                <a href="#">
+                                    <img src="https://picsum.photos/id/445/340/300" alt="">
+                                </a>
+                            </div>
+                            <div class="review_txt">
+                                <div>
+                                    <h3>lorem ipsum</h3>
+                                </div>
+                                <div>Lorem Ipsum is simply
+                                    <br>
+                                    dummy text...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_box review_box_3">
+                            <div class="img_box img_box_1">
+                                <a href="#">
+                                    <img src="https://picsum.photos/id/445/340/300" alt="">
+                                </a>
+                            </div>
+                            <div class="review_txt">
+                                <div>
+                                    <h3>lorem ipsum</h3>
+                                </div>
+                                <div>Lorem Ipsum is simply
+                                    <br>
+                                    dummy text...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_box review_box_4">
+                            <div class="img_box img_box_1">
+                                <a href="#">
+                                    <img src="https://picsum.photos/id/445/340/300" alt="">
+                                </a>
+                            </div>
+                            <div class="review_txt">
+                                <div>
+                                    <h3>lorem ipsum</h3>
+                                </div>
+                                <div>Lorem Ipsum is simply
+                                    <br>
+                                    dummy text...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <section class="con-min-width bt_bar bg-black">
+                <nav class="con mx-auto flex flex-col flex-jc-c flex-ai-c text-13">
+                    <div class="nav__ft_menu ft_menu_1 flex flex-jc-sb">
+                        <ul class="item item_1">
+                            <h3 class="mb-18">제품</h3>
+                            <li><a href="#">스마트폰</a></li>
+                            <li><a href="#">태블릿</a></li>
+                            <li><a href="#">워치</a></li>
+                            <li><a href="#">노트북</a></li>
+                            <li><a href="#">모니터</a></li>
+                            <li><a href="#">프린터</a></li>
+                            <li><a href="#">음향기기</a></li>
+                            <li><a href="#">액세서리</a></li>
+                        </ul>
+                        <ul class="item item_2">
+                            <h3 class="mb-18">고객서비스</h3>
+                            <li><a href="#">매뉴얼 & 다운로드</a></li>
+                            <li><a href="#">매장 찾기</a></li>
+                            <li><a href="#">서비스센터 찾기</a></li>
+                            <li><a href="#">멤버십</a></li>
+                            <li><a href="#">고객문의</a></li>
+                            <li><a href="#">견적 문의</a></li>
+                        </ul>
+                        <!-- <ul class="item item_3">
+                            <h3 class="mb-18">이벤트</h3>
+                            <li><a href="#">구매 혜택</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul> -->
+                        <ul class="ft_menu item_4">
+                            <h3 class="mb-18">회사소개</h3>
+                            <li><a href="#">브랜드 아이덴티티</a></li>
+                            <li><a href="#">기업정보</a></li>
+                            <li><a href="#">사업정보</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">채용 정보</a></li>
+                        </ul>
+                        <ul class="ft_menu item_5">
+                            <h3 class="mb-18">비즈니스</h3>
+                            <li><a href="#">제휴 문의</a></li>
+                            <li><a href="#">파트너 신청</a></li>
+                            <li><a href="#">사업자 정보 확인</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <ul class="item_5__ul">
+                                <h3 class="mb-18">계정</h3>
+                                <li><a href="#">환경 설정</a></li>
+                                <li><a href="#">파트너 신청</a></li>
+                                <li><a href="#">사업자 정보 확인</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="nav__ft_menu ft_menu_2 menu_2 flex">
+                        <div class="sns_logo_wrap flex flex-jc-c flex-ai-c">
+                            <a href="#" class="logo logo-1 flex flex-jc-s flex-ai-c">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="logo logo-2 flex flex-jc-s flex-ai-c">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                            <a href="#" class="logo logo-3 flex flex-jc-s flex-ai-c">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="flex-grow-1"></div>
+                        <div class="txt_box_wrap">
+                            <div class="txt_box text-11">
+                                <div class="flex flex-jc-e">
+                                    <span class="block"><a href="#">개인정보처리방침</a></span>
+                                    <span class="block"><a href="#">사이트맵</a></span>
+                                    <span class="block"><a href="#">이용약관</a></span>
+                                </div>
+                                <span>Copyright © 1995-2024 Samsing. All Rights Reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

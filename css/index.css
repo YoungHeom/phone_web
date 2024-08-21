@@ -1,0 +1,606 @@
+/* 노멀라이즈 */
+body, ul, li, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* 폰트 */
+* {
+	font-family: 'pretendard';
+}
+
+/* 임시 */
+html > body * {
+    box-sizing: border-box;
+}
+/* 임시 */
+
+/* 라이브러리 */
+.bd {
+    border: 1px solid #aaa;
+}
+.bd-dt {
+    border: 1px dotted #aaa;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.block {
+    display: block;
+}
+.mx-auto {
+    margin: 0 auto;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.flex {
+    display: flex;
+}
+.flex-jc-c {
+    justify-content: center;
+}
+.flex-jc-s {
+    justify-content: flex-start;
+}
+.flex-jc-e {
+    justify-content: flex-end;
+}
+.flex-jc-sb {
+	justify-content: space-between;
+}
+.flex-jc-sa {
+    justify-content: space-around;
+}
+.flex-jc-se {
+    justify-content: space-evenly;
+}
+.flex-ai-c {
+    align-items: center;
+}
+.flex-ai-s {
+	align-items: flex-start;
+}
+.flex-ai-e {
+	align-items: flex-end;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-grid {
+    display: grid;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.font-w-100 {
+    font-weight: 100;
+}
+.font-w-200 {
+    font-weight: 200;
+}
+.font-w-300 {
+    font-weight: 300;
+}
+.font-w-400 {
+    font-weight: 400;
+}
+.font-w-500 {
+    font-weight: 500;
+}
+.font-w-600 {
+    font-weight: 600;
+}
+.font-w-700 {
+    font-weight: 700;
+}
+.font-w-800 {
+    font-weight: 800;
+}
+.font-w-900 {
+    font-weight: 900;
+}
+.text-48 {
+    font-size: 48px;
+}
+.text-44 {
+    font-size: 44px;
+}
+.text-36 {
+    font-size: 24px; /* 1.5rem */
+}
+.text-24 {
+    font-size: 24px; /* 1.5rem */
+}
+.text-20 {
+    font-size: 20px;
+}
+.text-18 {
+	font-size: 18px;
+}
+.text-16 {
+	font-size: 16px;
+}
+.text-14 {
+	font-size: 14px;
+}
+.text-13 {
+	font-size: 13px;
+}
+.text-12 {
+	font-size: 12px;
+}
+.text-11 {
+    font-size: 11px;
+}
+.text-white {
+    color: white;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.con-min-width {
+    min-width: 1440px;
+}
+.con {
+    width: 1440px; 
+}
+section h2 {
+    font-size: 24px;
+}
+
+/* 커스텀 */
+
+/* header 시작 */
+header * {
+    font-size: 14px;
+}
+header {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* header > .menu_box_1 시작 */
+.menu_box_1 {
+    height: 80px;
+}
+/* 로고 */
+.menu_box_1 > .logo_wrap > h1 {
+	width: 160px;
+    height: 100%;
+	font-size: 3rem
+}
+/* 검색창 시작 */
+::-webkit-input-placeholder {
+    color: #777;
+}
+.con-min-width > .con .search_wrap {
+    width: 260px;
+	height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+	outline: 1px solid #fff;
+    margin-right: 30px;
+}
+
+.con-min-width > .con .search_wrap > .search_box {
+    width: 100%;
+	height: 100%;
+}
+
+.con-min-width > .con .search_wrap > .search_box > .search_box__input {
+	width: 100%;
+    background-color: transparent;
+	border: none;
+	font-size: 14px;
+	padding: 0;
+	padding-right: 10px;
+}
+
+.con-min-width > .con .search_wrap > .search_box > .search_box__input:focus {
+	outline: none;
+}
+
+.con-min-width > .con .search_wrap > .icon_box {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.con-min-width > .con .search_wrap > .icon_box i::before {
+	display: block;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+/* 검색창 끝 */
+
+.cart_login > .cart, .cart_login > .login {
+	width: 80px;
+}
+
+/* header > .menu_box_1 끝 */
+/* header 끝 */
+
+/* main 시작 */
+main {
+    margin-top: 80px;
+}
+main > .section:not(.section_1, .section_6) {
+    height: 810px;
+}
+main > .section > .con {
+    height: 100%;
+}
+main > .section h2 {
+    font-size: 36px;
+}
+/* 메인 안의 모든 섹션 안의 요소들 수직 가운데 정렬 시작 */
+main > .section > .con > .img_txt_wrap {
+    align-items: center; 
+}
+/* 메인 안의 모든 섹션 안의 요소들 수직 가운데 정렬 끝 */
+
+/* main > .section_1 시작 */
+main > .section_1 {
+    /* max-height: 100vh; */
+    height: 100%;
+}
+main > .section_1 > .con {
+    width: 100%;
+}
+main > .section_1 > .section_1__img_wrap > img {
+    height: 100%;
+    width: 100%;
+}
+
+/* main > .section_1 끝 */
+
+/* 모든 section_r 안의 .txt_box */
+main > .section_r > .con > .img_txt_wrap > .txt_box {
+    text-align: right;
+}
+main > .section_r > .con > .img_txt_wrap > .img_box > img {
+    /* margin-left: 40px; */
+    margin-left: auto;
+}
+
+/* main > .section_2 시작 */
+main > .section_2 {
+    /* padding: 80px 0; */
+    margin: 100px 0;
+    
+}
+main > .section_2 > .con > .flex_box {
+    width: 100%;
+}
+
+/* 스와이퍼 시작 */
+.swiper {
+	width: 90%;
+	/* height: 90%; */
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	color: #767676;
+    border-radius: 5px;
+}
+/* .swiper-button-next::after {
+    background-image: url(https://images.samsung.com/sec/smartphones/galaxy-s24/images/icon-carousel-arrow-white.svg);
+} */
+
+.section_2 .swiper-pagination .swiper-pagination-bullet {
+	background-color: gray;
+    width: 12px;
+    height: 12px;
+}
+.section_2 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 4px);
+}
+
+/* 스와이퍼 끝 */
+
+
+
+
+main > .section_2 > .con > .flex_box:last-child {
+	padding-top: 10px; /* section_2 .it_box 상하 사이 간격 */
+}
+
+main > .section_2 > .con .it_box {
+    width: 36%; 
+	height: 350px;
+    border-radius: 10px;
+    /* border: 1px solid blue; */
+    background-color: black;
+    overflow: hidden;
+}
+main > .section_2 > .con .it_box img {
+    width: 100%;
+}
+main > .section_2 > .con .it_box:last-child {
+	margin-left: 10px; /* section_2 .it_box 좌우 사이 간격 */
+	background-color: #ffa;
+}
+/*main > .section_2 끝 */
+
+main > .section_2-2 {
+    height: 50px;
+}
+
+/* main > .section_3 시작 */
+main > .section_3 {
+    /* height: 900px; */
+    height: 810px;
+    margin-bottom: 100px;
+}
+main > .section_3 > .con {
+    height: 810px;
+}
+main > .section_3 > .con > .video_wrap {
+    width: 100%;
+    height: 100%;
+    /* background-color: #ffd; */
+}
+main > .section_3 > .con > .video_wrap > iframe {
+    width: 100%;
+    height: 100%;
+}
+/* main > .section_3 끝 */
+
+main > .section_100vh {
+    height: 100vh;
+}
+.section_100vh > .h2_txt {
+    font-size: 44px;
+    font-weight: 900;
+}
+.section_100vh > .h2_txt.weight {
+    animation-name: weight;
+	animation-duration: 2s;
+}
+
+@keyframes weight {
+	0% {
+		font-weight: 100;
+	}
+	100%{
+		font-weight: 900;
+	}
+}
+
+
+
+/* main > .section_4 시작 */
+main > .section_4 > .con .title, main > .section_5 > .con .title, main > .section_6 > .con .title {
+    font-size: 28px;
+}
+/* 모든 section_l(left) 안의 .txt_box */
+
+.section_4 > .con img, .section_5 > .con img {
+    width: 720px;
+}
+.section_4 > .con img, .section_5 > .con img, .section_6 > .con img {
+    border-radius: 20px;
+}
+/* .section_4 .img_txt_wrap {
+    width: 100%;
+} */
+.section_4 .img_txt_wrap > .txt_box {
+    padding-left: 60px;
+}
+.section_5 .img_txt_wrap > .txt_box {
+    padding-right: 60px;
+}
+
+main > .section_4 .con_title_box {
+    padding-bottom: 48px;
+}
+main > .section_4 > .con > .absolute { /* AI가... (이하생략) h1 */
+    left: 0px;
+    top: 10px;
+}
+
+
+main > .section > .con > .img_txt_wrap > .txt_box > .txt {
+	/* 메인 안의 모든 섹션 안의 텍스트 박스*/
+	margin-top: 16px; 
+    line-height: 1.4rem;
+}
+/* main > .section_4 끝 */
+
+/* main > .section_6 시작 */
+.section_6 {
+    padding-top: 80px;
+}
+.section_6 > .con .title, .section_6 > .con .txt {
+    text-align: center;
+    padding-bottom: 18px;
+}
+.section_6 > .con .txt {
+    padding-bottom: 80px;
+}
+main > .section_6 > .con > .img_txt_wrap img {
+    width: 540px;
+}
+/* main > .section_6 끝 */
+/* main > .section_4~7 높이 설정 시작 */
+main > .st_h_1 {
+    height: 720px;
+}
+/* main > .section_4~7 높이 설정 끝 */
+
+
+/* main > .section_8 시작 */
+main > .section_8, main > .section_9 {
+    height: 810px;
+}
+
+main > .section_8 > .con {
+    height: 100%;
+}
+main > .section_8 > .con > .info_wrap {
+    /* width: 1280px; */
+    width: 100%;
+}
+main > .section_8 > .con > .info_wrap > h2 {
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+main > .section_8 > .con > .info_wrap > .info_box > .s24_info {
+    /* width: 315px;  */
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 22px 100px;
+}
+main > .section_8 > .con > .info_wrap > .info_box > .s24_info .h3_wrap {
+    padding-bottom: 20px;
+}
+main > .section_8 > .con > .info_wrap > .info_box > .s24_info h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+main > .section_8 > .con > .info_wrap > .info_box > .s24_info i::before {
+    font-size: 20px;
+    display: block;
+    padding-top: 1px;
+    text-shadow: 1px 0 black;
+}
+main > .section > .con > .info_wrap > .info_box .s24_info div.txt_box .txt_box__txt {
+    margin-top: 6px;
+    text-align: center;
+}
+.section_8 .txt_box_wrap .txt_box {
+    gap: 12px;
+}
+.section_8 .txt_bold {
+    font-weight: bold;
+}
+
+/* main > .section_8 끝 */
+/* main > .section_9 시작 */
+main > .section_9 > .con {
+    height: 100%;
+}
+main > .section_9 > .con > .absolute {
+    /* left: 10px; */
+    top: 100px;
+}
+main > .section_9 > .con > .m-t {
+    margin-top: 50px;
+}
+/* main > .section_9 끝 */
+/* main 끝 */
+
+/* footer 시작 */
+nav.con {
+    height: 420px;
+    /* 	font-size: 14px; */
+    color: #d6d6d6;
+}
+footer > section.con-min-width nav > div {
+	width: 100%;
+/* 	padding-left: 100px; */
+	padding-top: 10px;
+}
+footer > section.con-min-width nav > div:last-child {
+    padding-top: 30px;
+}
+
+footer .con > .ft_menu_1 > ul h3.mb-18 {
+	font-size: 16px;
+    margin-bottom: 18px;
+    /* h3 메뉴 아래 간격 */
+}
+footer nav.con .ft_menu_1 ul > li {
+    margin-top: 12px; /* 작은 메뉴들 간격 */
+    /* border: 1px solid #fff; */
+}
+
+footer nav.con .ft_menu > .item_5__ul > h3 {
+    margin-top: 20px;
+}
+
+
+/* .con > ft_menu.ft_menu_2 시작 */
+footer > .con-min-width .sns_logo_wrap > .logo {
+    width: 30px;
+	height: 30px;
+    /* 	border: 1px dashed #000; */
+}
+footer > .con-min-width .sns_logo_wrap {
+    font-size: 24px;
+}
+
+.sns_logo_wrap .fa-brands.fa-square-facebook::before {
+    padding-right: 3px;
+}
+footer > nav > .nav__ft_menu .txt_box_wrap .txt_box span {
+    border: 10px solid #000;
+}
+footer .nav__ft_menu .txt_box_wrap .txt_box .flex> .block> a {
+    padding-left: 6px;
+}
+/* .con > ft_menu.ft_menu_2 끝 */
+/* footer 끝 */
+
+
+@media ( max-width: 1100px ) {
+    .con-min-width {
+        min-width: 1080px;
+    }
+    .con {
+        width: 1080px; 
+    }
+    
+    
+    .swiper {
+        height: 65%;
+    }
+}
